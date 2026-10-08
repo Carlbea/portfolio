@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Carl Tristan G. Bea | IT Helpdesk & Support</title>
+<meta name="description" content="Portfolio of Carl Tristan G. Bea, 4th year IT student aspiring to be an IT helpdesk and support professional.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a href="#top" class="logo">CTB</a>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#toolkit">Toolkit</a>
+    <a href="#fixit">Try a fix</a>
+    <a href="#work">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-text">
+      <p class="hello">Hi, I'm Carl Tristan G. Bea.</p>
+      <h1>I turn "it's not working" into "it works."</h1>
+      <p class="lead">4th year IT student looking for my first role in IT helpdesk and technical support. I like staying calm, asking the right questions, and explaining fixes in plain language.</p>
+      <div class="actions">
+        <a class="btn primary" href="#contact">Hire me</a>
+        <a class="btn" href="#fixit">Watch me troubleshoot</a>
+      </div>
+    </div>
+
+    <article class="ticket" aria-label="Sample support ticket">
+      <div class="ticket-head">
+        <span>Ticket #0001</span>
+        <span id="status" class="status open">Open</span>
+      </div>
+      <h2>Company needs a dependable support teammate</h2>
+      <dl>
+        <dt>Requester</dt><dd>Your IT team</dd>
+        <dt>Assigned to</dt><dd>Carl Tristan G. Bea</dd>
+        <dt>Priority</dt><dd>High</dd>
+      </dl>
+      <button id="resolveBtn" class="btn primary full">Assign to Carl</button>
+      <p id="ticketNote" class="note">Click to see how fast I move.</p>
+    </article>
+  </section>
+
+  <section id="about" class="block">
+    <h2>About me</h2>
+    <div class="two-col">
+      <p>I'm a 4th year Information Technology student from the Philippines. Fixing computers for family and classmates is what got me into IT, and helping people get back to work is what I want to do every day.</p>
+      <p>I'm training to handle the full support loop: listen to the problem, reproduce it, fix it, document it, and follow up. I'm ready to learn your tools and your ticketing process quickly.</p>
+    </div>
+    <ul class="facts">
+      <li><strong>4th year</strong> BS Information Technology</li>
+      <li><strong>Goal</strong> IT Helpdesk / Technical Support</li>
+      <li><strong>Languages</strong> English, Filipino</li>
+      <li><strong>Availability</strong> Ready for internship or entry-level</li>
+    </ul>
+  </section>
+
+  <section id="toolkit" class="block">
+    <h2>My support toolkit</h2>
+    <p class="sub">Click a group to see what I can do. Replace these with skills you truly have.</p>
+    <div class="tabs" role="tablist">
+      <button role="tab" class="tab active" data-tab="hardware">Hardware</button>
+      <button role="tab" class="tab" data-tab="software">Software and OS</button>
+      <button role="tab" class="tab" data-tab="network">Networking</button>
+      <button role="tab" class="tab" data-tab="people">People skills</button>
+    </div>
+    <div id="tabPanel" class="panel" role="tabpanel"></div>
+  </section>
+
+  <section id="fixit" class="block">
+    <h2>Try a fix</h2>
+    <p class="sub">Pick a common problem and see the order I'd troubleshoot it in.</p>
+    <div class="fixit">
+      <div class="issues" id="issues"></div>
+      <div class="steps">
+        <h3 id="issueTitle">Choose a problem</h3>
+        <ol id="stepList"></ol>
+        <p id="progress" class="note"></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" class="block">
+    <h2>Projects and experience</h2>
+    <p class="sub">Placeholders. Swap in your own school, home lab, or OJT work.</p>
+    <div class="projects">
+      <article>
+        <h3>Home lab: Windows and Linux setup</h3>
+        <p>Installed and configured both systems in virtual machines, created user accounts, and practiced fixing boot and driver problems.</p>
+        <span class="tag">VirtualBox</span><span class="tag">Windows</span><span class="tag">Ubuntu</span>
+      </article>
+      <article>
+        <h3>Small office network design</h3>
+        <p>Planned a LAN with IP addressing, a router, and switches in Cisco Packet Tracer, then tested connectivity between departments.</p>
+        <span class="tag">Packet Tracer</span><span class="tag">TCP/IP</span><span class="tag">DHCP</span>
+      </article>
+      <article>
+        <h3>Support knowledge base</h3>
+        <p>Wrote step-by-step guides for password resets, printer setup, and Wi-Fi issues so non-technical users can solve them alone.</p>
+        <span class="tag">Documentation</span><span class="tag">Communication</span>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact" class="block contact">
+    <h2>Let's talk</h2>
+    <p class="sub">Have an open helpdesk or support role? Send me a message.</p>
+    <form id="contactForm" novalidate>
+      <label>Name<input type="text" id="name" required></label>
+      <label>Email<input type="email" id="email" required></label>
+      <label>Message<textarea id="message" rows="4" required></textarea></label>
+      <button class="btn primary" type="submit">Open email draft</button>
+      <p id="formMsg" class="note" role="status"></p>
+    </form>
+    <p class="links">
+      <a href="carlplayz777@gmail.com">youremail@example.com</a>
+      <a href="https://linkedin.com/in/carl bea">LinkedIn</a>
+      <a href="https://github.com/carlbea">GitHub</a>
+    </p>
+  </section>
+</main>
+
+<footer>© <span id="year"></span> Carl Tristan G. Bea</footer>
+<script src="script.js"></script>
+</body>
+</html>
