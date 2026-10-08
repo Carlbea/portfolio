@@ -4,132 +4,119 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Carl | Portfolio</title>
-<meta name="description" content="Portfolio of Carl Tristan G. Bea, 4th year IT student aspiring to be an IT helpdesk and support professional.">
+<meta name="description" content="Portfolio of Carl Tristan G. Bea, aspiring IT Helpdesk and Technical Support professional.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="nav">
-  <a href="#top" class="logo">CTB</a>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#toolkit">Toolkit</a>
-    <a href="#fixit">Try a fix</a>
-    <a href="#work">Projects</a>
-    <a href="#contact">Contact</a>
+  <a href="#home" class="logo">Carl</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+  <nav id="menu">
+    <a href="#home">Home</a><a href="#services">Services</a><a href="#skills">Skills</a>
+    <a href="#education">Education</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
   </nav>
 </header>
 
-<main id="top">
-  <section class="hero">
+<main>
+  <section id="home" class="hero">
     <div class="hero-text">
-      <p class="hello">Hi, I'm Carl Tristan G. Bea.</p>
-      <h1>I turn "it's not working" into "it works."</h1>
-      <p class="lead">4th year IT student looking for my first role in IT helpdesk and technical support. I like staying calm, asking the right questions, and explaining fixes in plain language.</p>
-      <div class="actions">
-        <a class="btn primary" href="#contact">Hire me</a>
-        <a class="btn" href="#fixit">Watch me troubleshoot</a>
+      <h1>Hi, It's <span>Carl</span></h1>
+      <h3>Aspiring IT Helpdesk &amp; Technical Support</h3>
+      <p>I am a 4th year IT student with a strong interest in troubleshooting hardware, software, and network issues. I enjoy helping users get back to work, explaining fixes in plain language, and documenting solutions clearly. I'm now building hands-on experience with ticketing, remote support, and customer service.</p>
+      <div class="socials">
+        <a href="https://github.com/your-username" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.700-.3-5.500-1.300-5.500-5.900 0-1.300.5-2.400 1.200-3.200-.1-.3-.5-1.500.1-3.200 0 0 1-.3 3.300 1.200a11.500 11.500 0 0 1 6 0c2.300-1.500 3.300-1.200 3.300-1.200.7 1.700.2 2.900.1 3.200.8.800 1.200 1.900 1.200 3.200 0 4.600-2.800 5.600-5.500 5.900.4.400.8 1.100.8 2.200v3.300c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg></a>
+        <a href="https://linkedin.com/in/your-profile" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.980 3.500a2.500 2.500 0 1 1 0 5 2.500 2.500 0 0 1 0-5zM3 9.500h4V21H3zM9.500 9.500h3.800v1.600c.6-1 1.900-1.900 3.900-1.900 4.100 0 4.800 2.700 4.800 6.100V21h-4v-5.100c0-1.200 0-2.800-1.700-2.800s-1.900 1.300-1.900 2.700V21h-4z"/></svg></a>
+        <a href="https://facebook.com/your-profile" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13.500 22v-8.500h2.900l.5-3.400h-3.400V8c0-1 .3-1.700 1.700-1.700H17V3.300C16.700 3.200 15.700 3 14.500 3c-2.600 0-4.300 1.500-4.300 4.300v2.800H7.300v3.400h2.900V22z"/></svg></a>
       </div>
+      <a class="btn" href="#contact">Hire Me</a>
     </div>
+    <div class="photo">
+      <img src="assets/profile.jpg" alt="Carl Tristan G. Bea" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'photo-fallback',textContent:'CB'}))">
+    </div>
+  </section>
 
-    <article class="ticket" aria-label="Sample support ticket">
-      <div class="ticket-head">
-        <span>Ticket #0001</span>
-        <span id="status" class="status open">Open</span>
+  <section id="services" class="section">
+    <h2 class="title">My Services</h2>
+    <div class="grid four">
+      <article class="card"><div class="ico">&#128295;</div><h3>Hardware Support</h3><p>Diagnosing and fixing desktops, laptops, printers, and peripherals.</p></article>
+      <article class="card"><div class="ico">&#128187;</div><h3>Software &amp; OS Support</h3><p>Installing, configuring, and troubleshooting Windows, Linux, and common apps.</p></article>
+      <article class="card"><div class="ico">&#127760;</div><h3>Network Troubleshooting</h3><p>Resolving Wi-Fi, IP, DNS, and connectivity problems for users and small offices.</p></article>
+      <article class="card"><div class="ico">&#127911;</div><h3>Helpdesk &amp; Customer Support</h3><p>Handling tickets, resetting accounts, and guiding users step by step.</p></article>
+    </div>
+  </section>
+
+  <section id="skills" class="section alt">
+    <h2 class="title">My Skills</h2>
+    <div class="grid three">
+      <article class="card"><h3>Technical Skills</h3><ul>
+        <li>Windows 10/11 installation and configuration</li><li>Ubuntu / Linux basics</li>
+        <li>PC assembly, repair, and diagnostics</li><li>TCP/IP, DNS, DHCP fundamentals</li>
+        <li>Active Directory basics</li><li>Malware removal and system cleanup</li></ul></article>
+      <article class="card"><h3>Helpdesk Skills</h3><ul>
+        <li>Ticket logging and documentation</li><li>Password and account resets</li>
+        <li>Remote desktop support</li><li>Active listening</li>
+        <li>Clear, patient communication</li><li>Problem solving under pressure</li></ul></article>
+      <article class="card"><h3>Currently Learning</h3><ul>
+        <li>CompTIA A+ (certification path)</li><li>Cisco CCNA fundamentals</li>
+        <li>ITIL basics</li><li>PowerShell scripting</li></ul></article>
+    </div>
+    <h2 class="title small">Tools &amp; Technologies</h2>
+    <div class="chips">
+      <span>Windows</span><span>Linux</span><span>VirtualBox</span><span>Packet Tracer</span>
+      <span>Microsoft 365</span><span>Google Workspace</span><span>AnyDesk</span><span>TeamViewer</span>
+      <span>Command Prompt</span><span>Jira / ticketing</span>
+    </div>
+  </section>
+
+  <section id="education" class="section">
+    <h2 class="title">My Education</h2>
+    <div class="timeline">
+      <article class="card"><h3>Bachelor of Science in Information Technology</h3><h4>Your University, City</h4><span class="date">2022 - 2026</span>
+        <p>Currently in 4th year. Relevant coursework in networking, databases, systems administration, and web development.</p></article>
+      <article class="card"><h3>Your Senior High School</h3><h4>City, Province</h4><span class="date">2020 - 2022</span>
+        <p>Completed senior high school with a focus on technology and computer systems.</p></article>
       </div>
-      <h2>Company needs a dependable support teammate</h2>
-      <dl>
-        <dt>Requester</dt><dd>Your IT team</dd>
-        <dt>Assigned to</dt><dd>Carl Tristan G. Bea</dd>
-        <dt>Priority</dt><dd>High</dd>
-      </dl>
-      <button id="resolveBtn" class="btn primary full">Assign to Carl</button>
-      <p id="ticketNote" class="note">Click to see how fast I move.</p>
-    </article>
   </section>
 
-  <section id="about" class="block">
-    <h2>About me</h2>
-    <div class="two-col">
-      <p>I'm a 4th year Information Technology student from EARIST Cavite. Fixing computers for family and classmates is what got me into IT, and helping people get back to work is what I want to do every day.</p>
-      <p>I'm training to handle the full support loop: listen to the problem, reproduce it, fix it, document it, and follow up. I'm ready to learn your tools and your ticketing process quickly.</p>
+  <section id="projects" class="section alt">
+    <h2 class="title">My Projects</h2>
+    <div class="grid three">
+      <article class="card"><h3>Home Lab: Windows &amp; Linux</h3><p>Installed and configured Windows and Ubuntu in virtual machines, created user accounts, and practiced fixing boot and driver errors.</p><div class="tags"><span>VirtualBox</span><span>Windows</span><span>Ubuntu</span></div></article>
+      <article class="card"><h3>Small Office Network Design</h3><p>Designed a LAN with IP addressing, router, and switches in Cisco Packet Tracer and tested connectivity between departments.</p><div class="tags"><span>Packet Tracer</span><span>TCP/IP</span><span>DHCP</span></div></article>
+      <article class="card"><h3>Support Knowledge Base</h3><p>Wrote step-by-step guides for password resets, printer setup, and Wi-Fi issues so non-technical users can solve them on their own.</p><div class="tags"><span>Documentation</span><span>Communication</span></div></article>
+      <article class="card"><h3>PC Build &amp; Troubleshooting</h3><p>Assembled a desktop from parts, installed the OS and drivers, and diagnosed RAM and storage faults.</p><div class="tags"><span>Hardware</span><span>Diagnostics</span></div></article>
+      <article class="card"><h3>Mock Ticketing System</h3><p>Practiced logging, prioritizing, and closing tickets with clear notes and follow-ups in a ticketing tool.</p><div class="tags"><span>Ticketing</span><span>ITIL</span></div></article>
+      <article class="card"><h3>Remote Support Practice</h3><p>Helped classmates and family fix problems remotely using screen sharing and clear instructions.</p><div class="tags"><span>AnyDesk</span><span>Customer Service</span></div></article>
     </div>
-    <ul class="facts">
-      <li><strong>4th year</strong> BS Information Technology</li>
-      <li><strong>Goal</strong> IT Helpdesk / Technical Support</li>
-      <li><strong>Languages</strong> English, Filipino</li>
-      <li><strong>Availability</strong> Ready for internship or entry-level</li>
-    </ul>
   </section>
 
-  <section id="toolkit" class="block">
-    <h2>My support toolkit</h2>
-    <p class="sub">Click a group to see what I can do. Replace these with skills you truly have.</p>
-    <div class="tabs" role="tablist">
-      <button role="tab" class="tab active" data-tab="hardware">Hardware</button>
-      <button role="tab" class="tab" data-tab="software">Software and OS</button>
-      <button role="tab" class="tab" data-tab="network">Networking</button>
-      <button role="tab" class="tab" data-tab="people">People skills</button>
-    </div>
-    <div id="tabPanel" class="panel" role="tabpanel"></div>
-  </section>
-
-  <section id="fixit" class="block">
-    <h2>Try a fix</h2>
-    <p class="sub">Pick a common problem and see the order I'd troubleshoot it in.</p>
-    <div class="fixit">
-      <div class="issues" id="issues"></div>
-      <div class="steps">
-        <h3 id="issueTitle">Choose a problem</h3>
-        <ol id="stepList"></ol>
-        <p id="progress" class="note"></p>
+  <section id="contact" class="section">
+    <h2 class="title">Get In Touch</h2>
+    <div class="contact-wrap">
+      <div>
+        <h3>Let's Connect</h3>
+        <p>Feel free to reach out for any helpdesk, support, or internship opportunity. I'm always open to learning and new teams.</p>
+        <ul class="info">
+          <li>&#9993; youremail@example.com</li>
+          <li>&#128222; +63 963 459 6475</li>
+          <li>&#128205; Cavite, Philippines</li>
+        </ul>
       </div>
+      <form id="contactForm" novalidate>
+        <label>Name<input type="text" id="name" required></label>
+        <label>Email<input type="email" id="email" required></label>
+        <label>Message<textarea id="message" rows="4" required></textarea></label>
+        <button class="btn" type="submit">Send Message</button>
+        <p id="formMsg" role="status"></p>
+      </form>
     </div>
-  </section>
-
-  <section id="work" class="block">
-    <h2>Projects and experience</h2>
-    <p class="sub">Placeholders. Swap in your own school, home lab, or OJT work.</p>
-    <div class="projects">
-      <article>
-        <h3>Home lab: Windows and Linux setup</h3>
-        <p>Installed and configured both systems in virtual machines, created user accounts, and practiced fixing boot and driver problems.</p>
-        <span class="tag">VirtualBox</span><span class="tag">Windows</span><span class="tag">Ubuntu</span>
-      </article>
-      <article>
-        <h3>Small office network design</h3>
-        <p>Planned a LAN with IP addressing, a router, and switches in Cisco Packet Tracer, then tested connectivity between departments.</p>
-        <span class="tag">Packet Tracer</span><span class="tag">TCP/IP</span><span class="tag">DHCP</span>
-      </article>
-      <article>
-        <h3>Support knowledge base</h3>
-        <p>Wrote step-by-step guides for password resets, printer setup, and Wi-Fi issues so non-technical users can solve them alone.</p>
-        <span class="tag">Documentation</span><span class="tag">Communication</span>
-      </article>
-    </div>
-  </section>
-
-  <section id="contact" class="block contact">
-    <h2>Let's talk</h2>
-    <p class="sub">Have an open helpdesk or support role? Send me a message.</p>
-    <form id="contactForm" novalidate>
-      <label>Name<input type="text" id="name" required></label>
-      <label>Email<input type="email" id="email" required></label>
-      <label>Message<textarea id="message" rows="4" required></textarea></label>
-      <button class="btn primary" type="submit">Open email draft</button>
-      <p id="formMsg" class="note" role="status"></p>
-    </form>
-    <p class="links">
-      <a href="carlplayz777@gmail.com">carlplayz777@gmail.com</a>
-      <a href="https://linkedin.com/in/carl bea">LinkedIn</a>
-      <a href="https://github.com/carlbea">GitHub</a>
-    </p>
   </section>
 </main>
 
-<footer>© <span id="year"></span> Carl Tristan G. Bea</footer>
+<footer>&copy; <span id="year"></span> Carl Tristan G. Bea.</footer>
 <script src="script.js"></script>
 </body>
 </html>
